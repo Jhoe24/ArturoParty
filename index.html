@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡ARTURO MATTEL® - Cumpleaños!</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="shortcut icon" href="icons/icon-192.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       PANTALLA 1 — CAJA DE JUGUETE (INTRO)
+  ══════════════════════════════════════════════════ -->
+  <section id="screen-box" class="screen active">
+    <div class="sparkles-bg"></div>
+
+    <div class="toy-box" id="toyBox">
+      <div class="toy-box__top-bar">
+        <span class="mattel-badge">
+          <img src="assets/img/ArturoMattel.jpeg" alt="ArturoMattel" />
+        </span>
+        <span class="age-badge">3+</span>
+      </div>
+
+      <div class="toy-box__window">
+        <img class="doll-preview" src="assets/img/ArturoDoll.jpeg" alt="ArturoDoll" />
+      </div>
+
+      <div class="toy-box__logo">
+        <img src="assets/img/ArturoLogo.jpeg" alt="Arturo logo" />
+      </div>
+
+      <p class="toy-box__tagline">El muñeco más versátil del mundo™</p>
+
+      <button class="open-box-btn" onclick="startShowcase()">
+        <span>¡ABRIR CAJA!</span>
+        <div class="btn-shine"></div>
+      </button>
+    </div>
+
+    <div class="floating-stars">
+      <span>⭐</span><span>✨</span><span>💫</span>
+      <span>⭐</span><span>✨</span><span>💫</span>
+      <span>⭐</span><span>✨</span><span>💫</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PANTALLA 2 — SHOWCASE DE PROFESIONES
+  ══════════════════════════════════════════════════ -->
+  <section id="screen-showcase" class="screen">
+    <div class="showcase-bg" id="showcaseBg"></div>
+
+    <div class="showcase-header">
+      <p class="showcase-can-be">ARTURO puede ser...</p>
+    </div>
+
+    <div class="slide-track" id="slideTrack">
+
+      <!-- SLIDE 1 — Técnico / Plomero -->
+      <div class="slide" data-color="#FF0090" data-accent="#fff">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoTécnico.jpeg" alt="ArturoTécnico" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Técnico<br/>Multi-Oficio!</h2>
+          <p class="sub">Plomero · Electricista · Albañil</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 — Mecánico -->
+      <div class="slide" data-color="#0057A8" data-accent="#FFD700">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoMecánico.jpeg" alt="ArturoMecánico" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Mecánico<br/>de Motos!</h2>
+          <p class="sub">Porque arregla TODO</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 — Karateka -->
+      <div class="slide" data-color="#111111" data-accent="#FF0090">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoKarateka.jpeg" alt="ArturoKarateka" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Supremo<br/>Karateka!</h2>
+          <p class="sub">Cinturón negro · Papá Favorito</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 — Maestro Barbero -->
+      <div class="slide" data-color="#2C1A0E" data-accent="#D4A852">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoBarbero.jpeg" alt="ArturoBarbero" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Maestro<br/>Barbero!</h2>
+          <p class="sub">El corte más fino del barrio</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 5 — Chef -->
+      <div class="slide" data-color="#C8102E" data-accent="#fff">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoChef.jpeg" alt="ArturoChef" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Chef<br/>Estrella!</h2>
+          <p class="sub">Especialidad: café negro solo ☕</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 6 — Costurero -->
+      <div class="slide" data-color="#5B3A8C" data-accent="#FFB6C1">
+        <div class="slide-doll">
+          <img src="assets/img/ArturoCosturero.jpeg" alt="ArturoCosturero" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession">¡Maestro<br/>Costurero!</h2>
+          <p class="sub">Hasta la aguja domina</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 7 — El chiste final -->
+      <div class="slide slide--final" data-color="#FF0090" data-accent="#fff">
+        <div class="slide-doll slide-doll--big">
+          <img src="assets/img/ArturoBarbiebox.jpeg" alt="ArturoBarbiebox" />
+        </div>
+        <div class="slide-label">
+          <h2 class="profession profession--final">...lo que<br/>quiera ser<br/>😂</h2>
+          <p class="sub sub--big">¡Menos joven!<br/>Pero igual de guapo 🤙</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles del carrusel -->
+    <div class="carousel-controls">
+      <button class="ctrl-btn" id="prevBtn" onclick="prevSlide()">&#8592;</button>
+      <div class="dots" id="dotsContainer"></div>
+      <button class="ctrl-btn" id="nextBtn" onclick="nextSlide()">&#8594;</button>
+    </div>
+
+    <button class="see-invite-btn" id="seeInviteBtn" onclick="showInvitation()" style="display:none;">
+      🎉 Ver Invitación
+    </button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PANTALLA 3 — INVITACIÓN
+  ══════════════════════════════════════════════════ -->
+  <section id="screen-invitation" class="screen">
+    <div class="confetti-layer" id="confettiLayer"></div>
+
+    <div class="invite-card">
+      <button class="back-btn" onclick="goBack()">← Volver</button>
+
+      <div class="invite-card__header">
+        <img class="invite-logo" src="assets/img/ArturoLogo.jpeg" alt="Arturo" />
+        <p class="invite-sub">te invita a su fiesta de cumpleaños</p>
+      </div>
+
+      <div class="invite-card__doll-row">
+        <img src="assets/img/ArturoKen.jpeg" alt="ArturoKen" class="invite-ken" />
+        <div class="invite-details">
+          <div class="detail-item">
+            <span class="detail-icon">📅</span>
+            <div>
+              <strong>Fecha</strong>
+              <p>Lunes 13 de Abril, 2026</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">⏰</span>
+            <div>
+              <strong>Hora</strong>
+              <p>6:00 PM</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong>Lugar</strong>
+              <p>
+                <a href="https://www.google.com/maps/place/8%C2%B037'43.9%22N+70%C2%B014'35.8%22W/" target="_blank" class="map-link">
+                  📌 Ver en Maps
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="countdown-wrapper">
+        <p class="countdown-title">¡Faltan!</p>
+        <div class="countdown-grid">
+          <div class="countdown-box"><span id="cd-days">--</span><label>días</label></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box"><span id="cd-hours">--</span><label>horas</label></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box"><span id="cd-mins">--</span><label>min</label></div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box"><span id="cd-secs">--</span><label>seg</label></div>
+        </div>
+      </div>
+
+      <p class="invite-footer">
+        ¡No faltes! 🎊 Confirma tu asistencia<br/>y prepárate para celebrar
+      </p>
+
+      <div class="mattel-footer">
+        <img src="assets/img/ArturoMattel.jpeg" alt="ArturoMattel" class="mattel-footer-badge" />
+        <span>© Arturo Mattel® — Edición Cumpleaños Especial</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
