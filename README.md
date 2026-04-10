@@ -1,6 +1,6 @@
-# EverestParty — ¡TOCA LA PUERTA!
+# ArturoParty — ¡TOCA LA PUERTA!
 
-Pequeña página web / PWA para una invitación interactiva llamada "¡TOCA LA PUERTA! - Fiesta Everest".
+Pequeña página web / PWA para una invitación interactiva llamada "¡TOCA LA PUERTA! - Proyecto Arturo".
 
 ## 📝 Descripción
 

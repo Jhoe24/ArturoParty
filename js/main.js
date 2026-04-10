@@ -33,12 +33,27 @@ function activateScreen(from, to) {
   }, 500);
 }
 
+// ── AUDIO INTRO ───────────────────────────────────
+const introAudio = document.getElementById('introAudio');
+let introAudioPlayed = false;
+
+function playIntroAudio() {
+  if (!introAudio || introAudioPlayed) return;
+  introAudio.volume = 0.55;
+  introAudio.play().then(() => {
+    introAudioPlayed = true;
+  }).catch(err => {
+    console.warn('Intro audio blocked:', err);
+  });
+}
+
 // ── INIT ─────────────────────────────────────────
 window.addEventListener('load', () => {
   buildDots();
   updateBg(0);
   updateDots(0);
   startCountdown();
+  playIntroAudio();
 
   // Registrar Service Worker
   if ('serviceWorker' in navigator) {
@@ -53,6 +68,8 @@ function startShowcase() {
   const box = document.getElementById('toyBox');
   box.style.transform = 'scale(1.05) rotateY(8deg)';
   box.style.transition = 'transform .3s ease';
+
+  playIntroAudio();
 
   setTimeout(() => {
     activateScreen(screenBox, screenShowcase);

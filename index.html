@@ -136,6 +136,9 @@
         <div class="slide-label">
           <h2 class="profession profession--final">...lo que<br/>quiera ser<br/>😂</h2>
           <p class="sub sub--big">¡Menos joven!<br/>Pero igual de guapo 🤙</p>
+          <button class="see-invite-btn" id="seeInviteBtn" onclick="showInvitation()" style="display:none;">
+      🎉 Ver Invitación
+    </button>
         </div>
       </div>
 
@@ -148,9 +151,7 @@
       <button class="ctrl-btn" id="nextBtn" onclick="nextSlide()">&#8594;</button>
     </div>
 
-    <button class="see-invite-btn" id="seeInviteBtn" onclick="showInvitation()" style="display:none;">
-      🎉 Ver Invitación
-    </button>
+    
   </section>
 
   <!-- ═══════════════════════════════════════════════
@@ -222,6 +223,7 @@
     </div>
   </section>
 
+  <audio id="introAudio" src="assets/sound/Intro.mp3" preload="auto"></audio>
   <script src="js/main.js"></script>
 </body>
 </html>
